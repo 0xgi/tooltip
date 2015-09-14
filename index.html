@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tooltip customize</title>
+    <link rel="stylesheet" href="source/tooltip.css"/>
+</head>
+<body style="background-color: #09670B">
+<p><a href="#">Lorem</a> ipsum dolor sit <a style="color: #fff" data-tip-type="text" data-tip-source="Full stack web development" class="tooltip" href="#">Vietworm</a>, consectetur adipisicing elit. Minima, nostrum, quidem? Accusamus accusantium, ad adipisci aliquam aperiam aut consectetur cupiditate dolorem dolorum eaque eum ex fuga fugit ipsum iure maiores, minima nam natus nemo nostrum odio officiis optio pariatur perspiciatis porro quaerat quasi quisquam quod rem sed sit sunt totam velit veniam veritatis vitae, voluptatum! Ab accusantium aperiam aspernatur assumenda deleniti dolorem dolorum eius esse eveniet fugit harum hic illum in ipsam magni minus officiis omnis praesentium qui quis reiciendis repellendus rerum sit tempore ullam veniam, vero voluptas voluptate voluptatem voluptatibus! Asperiores eligendi enim fugiat fugit laudantium molestiae quia unde!</p>
+<script type="text/javascript" src="libs/jquery.min.js"></script>
+<script type="text/javascript" src="source/tooltip.js"></script>
+
+
+<script>
+    $(document).ready(function() {
+        $('.tooltip').webhook({
+            type: 'text',
+            source: 'This is the toolitp customize',
+            effect: 'fade',
+            css: {
+                backgroundColor: '#101',
+                backgroundImage: 'url(../image/tooltip.png)',
+                color: '#fff',
+                width: '50',
+                height: '50'
+            }
+        });
+
+        $('.tooltip2').webhook({
+            type: 'html',
+            source: '<strong>This is the toolitp customize</strong>',
+            effect: 'fade',
+            css: {
+                backgroundColor: '#101',
+                backgroundImage: 'url(../image/tooltip.png)',
+                color: '#fff',
+                width: '50',
+                height: '50'
+            },
+            image: {
+                position: 'left',
+                width: '50',
+                height: '50'
+            }
+        });
+    })
+</script>
+</body>
+</html>

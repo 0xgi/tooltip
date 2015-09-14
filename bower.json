@@ -1,0 +1,13 @@
+{
+  "name": "tooltip",
+  "version": "0.0.1",
+  "homepage": "https://github.com/0xgi/tooltip",
+  "authors": [
+    "Vietworm"
+  ],
+  "description": "web tooltip customize",
+  "keywords": [
+    "tooltip"
+  ],
+  "license": "MIT"
+}
